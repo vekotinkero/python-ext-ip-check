@@ -14,7 +14,7 @@ It basically compares IP fetched from web (http://dynamicdns.park-your-domain.co
 - Beers for rudimentary coding
 
 # Yagmail and Google
-I've used my Gmail account for this. And for security reasons I used Oauth2 so I don't have to put my usernames and password in every garbage piece of code I happen to generate. If you want to set it up go ahead, grab a beer and read more about it from [Here](https://github.com/kootenpv/yagmail)
+I've used my Gmail account for this. And for security reasons I used Oauth2 so I don't have to put my usernames and password in every garbage piece of code I happen to generate. If you want to set it up go ahead, grab a beer and read more about it from [here](https://github.com/kootenpv/yagmail)
 
 # Crontab
 If you're familiar with RasPi and Linux, you're probably familiar with [Crontab](http://www.adminschoice.com/crontab-quick-reference). Anyway, this is what I added to sudo Crontab. Remember to make your ipcheck.py executable and run it as sudo.
@@ -22,4 +22,3 @@ If you're familiar with RasPi and Linux, you're probably familiar with [Crontab]
 ```
 # Check the External IP Address and send email if it's changed
 0 0 1 * * sudo python /home/pi/ipcheck.py
-´´´
