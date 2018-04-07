@@ -24,5 +24,5 @@ If you're familiar with RasPi and Linux, you're probably familiar with [Crontab]
 0 0 1 * * sudo python /home/pi/ipcheck.py
 ```
 # Shortcut for lazy people
-If you're lazy like me, you can make necessary linux mambo jambo with the script mambojambosetup.sh. Run it as sudo.
+If you're lazy like me, you can make necessary linux mambo jambo with the script [mambojambosetup.sh](https://github.com/vekotinkero/python-ext-ip-check/blob/master/mambojambosetup.sh). Run it as sudo. It will install Yagmail for Python and make the changes to Crontab. If you want to run the ipcheck.py more or less frequently edit this script or edit crontab directly with ``` sudo crontab -e ``` 
 
