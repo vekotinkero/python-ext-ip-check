@@ -14,7 +14,7 @@ It basically compares IP fetched from web (http://dynamicdns.park-your-domain.co
 - Beers for rudimentary coding
 
 # Yagmail and Google
-I've used my Gmail account for this. And for security reasons I used Oauth2 so I don't have to put my usernames and password in every garbage piece of code I happen to generate. If you want to set it up go ahead, grab a beer and read more about it from [here](https://github.com/kootenpv/yagmail)
+I've used my Gmail account for this. And for security reasons I used Oauth2 so I don't have to put my usernames and password in every garbage piece of code I happen to generate. If you want to set it up go ahead, grab a beer and read more about it from [here](https://github.com/kootenpv/yagmail). Read and follow the instructions and you shall be rewarded... after many beers and probably some frustration I mean. 
 
 # Crontab
 If you're familiar with RasPi and Linux, you're probably familiar with [Crontab](http://www.adminschoice.com/crontab-quick-reference). Anyway, this is what I added to sudo Crontab. This will run the ipcheck.py every month at 0:00. Remember to make your script executable and run it as sudo.
@@ -24,5 +24,5 @@ If you're familiar with RasPi and Linux, you're probably familiar with [Crontab]
 0 0 1 * * sudo python /home/pi/ipcheck.py
 ```
 # Shortcut for lazy people
-If you're lazy like me, you can make necessary linux mambo jambo with the script [mambojambosetup.sh](https://github.com/vekotinkero/python-ext-ip-check/blob/master/mambojambosetup.sh). Run it as sudo. It will install Yagmail for Python and make the changes to Crontab. If you want to run the ipcheck.py more or less frequently edit this script or edit crontab directly with ``` sudo crontab -e ``` 
+After you've downloaded this project to your home folder (e.g. /home/pi) and if you're lazy like me, you can make necessary linux mambo jambo with the script [mambojambosetup.sh](https://github.com/vekotinkero/python-ext-ip-check/blob/master/mambojambosetup.sh). Make it executable and run it as sudo. It will install Yagmail for Python and make the changes to Crontab. If you want to run the ipcheck.py more or less frequently edit this script or edit crontab directly with ``` sudo crontab -e ```. But be warned, it has a rear light guarantee and it removes itself after it has run. 
 
