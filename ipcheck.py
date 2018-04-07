@@ -23,10 +23,10 @@ else:
         file.write(currentip)
 
     # Notify via email
-    yag = yagmail.SMTP("veikko.kero@gmail.com", oauth2_file="~/oauth2_creds.json")
-    yag.send(to="veikko.kero@gmail.com",
-             subject="HUOM! veikkokero.fi IP muuttunut!",
-             contents = [ "Vanha IP: ", savedip, "Uusi IP: ", currentip ]
+    yag = yagmail.SMTP("[ INSERT YOUR EMAIL HERE ]", oauth2_file="~/oauth2_creds.json")
+    yag.send(to="[ INSERT EMAIL YOU WANT TO SPAM HERE ]",
+             subject="[ EMAIL SUBJECT ]",
+             contents =" [ EMAIL CONTENTS ]"
              )
 
         
