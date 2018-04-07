@@ -13,3 +13,6 @@ echo "0 0 1 * * sudo python /home/pi/ipcheck.py" >> mycron
 # Install new cron file
 sudo crontab mycron
 sudo rm mycron
+
+# Remove itself (not sure if a good idea)
+sudo rm /home/pi/mambojambosetup.sh
